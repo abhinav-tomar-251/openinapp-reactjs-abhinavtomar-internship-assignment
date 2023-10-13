@@ -1,9 +1,9 @@
 "use client";
 
-import LeftSide from "@/components/login/LeftSide";
-import RightSide from "@/components/login/RightSide";
+import LeftSide from "@/components/auth/LeftSide";
+import Form from "@/components/auth/signin";
 import React from "react";
-import { signIn, signOut, useSession } from "next-auth/react";
+import {  useSession } from "next-auth/react";
 
 import { redirect } from "next/navigation";
 
@@ -21,7 +21,7 @@ const page = () => {
             <LeftSide />
           </section>
           <section className="w-3/5 max-sm:w-full">
-            <RightSide />
+            <Form />
           </section>
         </main>
       )}

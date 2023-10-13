@@ -3,7 +3,7 @@
 import React from "react";
 import { signIn, signOut, useSession } from "next-auth/react";
 import SideBar from "@/components/dashboard/SideBar";
-import MainDash from "@/components/dashboard/MainDash";
+import MainDashboard from "@/components/dashboard/MainDashboard";
 import TopBar from "@/components/dashboard/TopBar";
 
 const page = () => {
@@ -20,7 +20,7 @@ const page = () => {
         <TopBar />
       </section>
       <section className="w-3/4 max-lg:w-full pb-10">
-        <MainDash />
+        <MainDashboard />
       </section>
     </main>
   );
