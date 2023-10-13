@@ -3,7 +3,7 @@
 import LeftSide from "@/components/auth/LeftSide";
 import Form from "@/components/auth/signin";
 import React from "react";
-import {  useSession } from "next-auth/react";
+import { signIn, signOut,  useSession } from "next-auth/react";
 
 import { redirect } from "next/navigation";
 
@@ -15,7 +15,7 @@ const page = () => {
 
   return (
     <>
-      {session.status === "unauthenticated" && (
+      {session?.status === "unauthenticated" && (
         <main className="flex flex-1 max-sm:flex-col min-h-screen">
           <section className="w-2/5 max-sm:w-full blue-bg">
             <LeftSide />

@@ -13,8 +13,6 @@ const page = () => {
     <main className="flex min-h-screen max-lg:flex-col mb-6">
       <section className="w-1/4 max-lg:hidden">
         <SideBar />
-        {/* <h1>Dashboard Page</h1>
-        <button onClick={() => signOut("google")}>Sign Out</button> */}
       </section>
       <section className="max-lg:block hidden">
         <TopBar />

@@ -71,6 +71,7 @@ const NavDash = ({ profileImage, email }) => {
                           height={22}
                           alt="Logout"
                       />
+                      Logout
                     </button>
                   </div>
                 </div>
